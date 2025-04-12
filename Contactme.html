@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Epic Travel Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: url('https://github.com/varadkarande/Travel-Blog/blob/main/Travel%20blog%20Website%20Backgroung.png?raw=true') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+            transform: scale(1.1);
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease;
+        }
+
+        .contact-card {
+            background-color: rgba(0, 0, 0, 0.6);
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-card h2 {
+            color: #ffd700;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
+        }
+
+        .contact-item {
+            margin: 25px 0;
+            text-align: left;
+        }
+
+        .contact-item h3 {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .contact-item p {
+            font-size: 1.1rem;
+            word-break: break-all;
+        }
+
+        .contact-item a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            text-align: center;
+            font-size: 1rem;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌍 Epic Travel Blog</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="places.html">Places</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" style="color: #ffd700;">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-card">
+            <h2>Contact Me</h2>
+            
+            <div class="contact-item">
+                <h3>👤 Name</h3>
+                <p>Eddie Hall</p>
+            </div>
+            
+            <div class="contact-item">
+                <h3>📧 Email</h3>
+                <p><a href="mailto:eddiehall@gmail.com">eddiehall@gmail.com</a></p>
+            </div>
+            
+            <div class="contact-item">
+                <h3>📱 Phone</h3>
+                <p><a href="tel:+917249556926">+91 (724) 955-6926</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Epic Travel Blog | Made with ❤️ by Varad</p>
+    </footer>
+</body>
+</html>
