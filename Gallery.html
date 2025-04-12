@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Travel Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: url('https://github.com/varadkarande/Travel-Blog/blob/main/Travel%20blog%20Website%20Backgroung.png?raw=true') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+            transform: scale(1.1);
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            animation: fadeIn 2s ease;
+        }
+
+        .gallery-intro {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05) rotate(1deg);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            filter: brightness(1.1);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            text-align: center;
+            font-size: 1rem;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌍 Epic Travel Gallery</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="places.html">Places</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <p class="gallery-intro">Witness the beauty of our planet through these breathtaking destinations. Click to imagine yourself there!</p>
+        
+        <div class="gallery">
+            <img src="https://github.com/varadkarande/Travel-Blog/blob/main/trpicalbeach.png?raw=true" alt="Tropical Beach">
+            <img src="https://github.com/varadkarande/Travel-Blog/blob/main/snowymountains.png?raw=true" alt="Snowy Mountains">
+            <img src="https://github.com/varadkarande/Travel-Blog/blob/main/deserts.png?raw=true" alt="Sandy Desert">
+            <img src="https://github.com/varadkarande/Travel-Blog/blob/main/citylights.png?raw=true" alt="City Lights">
+            <img src="https://github.com/varadkarande/Travel-Blog/blob/main/forest.png?raw=true" alt="Mystic Forest">
+            <img src="https://github.com/varadkarande/Travel-Blog/blob/main/waterfall.png?raw=true" alt="Waterfall">
+            <img src="https://github.com/varadkarande/Travel-Blog/blob/main/northern.png?raw=true" alt="Northern Lights">
+            <img src="https://github.com/varadkarande/Travel-Blog/blob/main/grandcanyon.png?raw=true" alt="Grand Canyon">
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Epic Travel Blog | Made with ❤️ by Varad</p>
+    </footer>
+</body>
+</html>
